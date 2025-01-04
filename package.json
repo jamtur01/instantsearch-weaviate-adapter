@@ -1,5 +1,5 @@
 {
-  "name": "@instantsearch/weaviate-adapter",
+  "name": "@jamtur01/instantsearch-weaviate-adapter",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },

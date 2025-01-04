@@ -8,7 +8,6 @@ describe('WeaviateSearchAdapter', () => {
   let hasTextVectorizer = false;
 
   beforeAll(async () => {
-    // Initialize adapter with local Weaviate instance
     adapter = new WeaviateSearchAdapter({
       weaviateUrl: 'http://localhost:8080',
       className: TEST_CLASS,
