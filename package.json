@@ -1,5 +1,12 @@
 {
-  "name": "instantsearch-weaviate-adapter",
+  "name": "@instantsearch/weaviate-adapter",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instantsearch/weaviate-adapter.git"
+  },
   "version": "1.0.0",
   "description": "An adapter to use Weaviate with InstantSearch.js",
   "main": "dist/index.js",
