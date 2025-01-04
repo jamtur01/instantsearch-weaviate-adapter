@@ -1,12 +1,9 @@
 import weaviate, { WeaviateClient, WhereFilter, ApiKey } from "weaviate-ts-client";
-import { SearchParameters } from "algoliasearch-helper";
 import {
   WeaviateAdapterOptions,
   SearchResponse,
-  WeaviateSearchParams,
   SearchRequest,
   FilterOperator,
-  ParsedFilter,
 } from "./types";
 
 export class WeaviateSearchAdapter {

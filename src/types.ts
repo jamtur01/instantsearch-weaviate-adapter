@@ -1,6 +1,3 @@
-import { SearchParameters } from 'algoliasearch-helper';
-import { WhereFilter } from 'weaviate-ts-client';
-
 export interface WeaviateAdapterOptions {
   weaviateUrl: string;
   className: string;
@@ -55,7 +52,7 @@ export interface WeaviateSearchParams {
 }
 
 export type SearchRequest = {
-  params: Partial<SearchParameters> & WeaviateSearchParams;
+  params: WeaviateSearchParams;
 };
 
 export type FilterOperator = 
@@ -72,10 +69,3 @@ export type FilterOperator =
   | 'ContainsAny'
   | 'IsNull'
   | 'WithinGeoRange';
-
-export interface ParsedFilter {
-  operator: FilterOperator;
-  field?: string;
-  value?: any;
-  operands?: ParsedFilter[];
-}
